@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express-app-deployment
+  name: express-app-deployment-ms-pagamento
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: express-app
+      app: express-app-ms-pagamento
   template:
     metadata:
       labels:
-        app: express-app
+        app: express-app-ms-pagamento
     spec:
       containers:
-        - name: express-container
-          image: acrlanchonete.azurecr.io/lanchonetecreusa:{{.Values.imageTag}}
+        - name: express-container-ms-pagamento
+          image: acrlanchonete.azurecr.io/lanchonetecreusa-ms-pagamento:{{.Values.imageTag}}
           ports:
             - containerPort: 3000
           env:
@@ -22,4 +22,4 @@ spec:
               valueFrom:
                 configMapKeyRef:
                   name: mongodb-configmap
-                  key: MONGO_URI
+                  key: MONGO_URI_PAGAMENTO

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: express-app-loadbalancer-service-ms-producao
+spec:
+  selector:
+    app: express-app-ms-producao
+  ports:
+    - protocol: TCP
+      port: 60
+      targetPort: 3000
+  type: LoadBalancer
