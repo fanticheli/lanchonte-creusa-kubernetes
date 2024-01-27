@@ -21,5 +21,10 @@ spec:
             - name: MONGO_URI
               valueFrom:
                 configMapKeyRef:
-                  name: mongodb-configmap
+                  name: lanchonete-configmap
                   key: MONGO_URI_PAGAMENTO
+            - name: MS_PEDIDO_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: lanchonete-configmap
+                  key: MS_PEDIDO_URL
