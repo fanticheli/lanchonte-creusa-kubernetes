@@ -6,3 +6,6 @@ data:
   MONGO_URI_PEDIDO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-pedido
   MONGO_URI_PAGAMENTO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-pagamento
   MONGO_URI_PRODUCAO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-producao
+  MS_PEDIDO_URL:
+  MS_PAGAMENTO_URL:
+  MS_PRODUCAO_URL:
