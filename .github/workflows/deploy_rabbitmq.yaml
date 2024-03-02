@@ -17,17 +17,17 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Set up kubectl
+  
+      - name: Set up kubectl
         uses: azure/aks-set-context@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
           cluster-name: kubernetes_cluster
           resource-group: resource_lanchonete
 
-    - name: Apply Kubernetes Manifests
-      run: |
-        kubectl apply -f k8s/rabbitmq --force
-    
-    - name: Logout from Azure
+      - name: Apply Kubernetes Manifests
+        run: |
+          kubectl apply -f /k8s/rabbitmq --force
+
+      - name: Logout from Azure
         run: az logout
