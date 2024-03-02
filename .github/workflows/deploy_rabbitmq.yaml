@@ -27,7 +27,7 @@ jobs:
 
       - name: Apply Kubernetes cluster-operator
         run: |
-          kubectl apply -f https://github.com/rabbitmq/cluster-operator/releases/tag/v2.7.0/download/cluster-operator.yaml
+          wget https://github.com/rabbitmq/cluster-operator/releases/download/v2.7.0/cluster-operator.yml && kubectl apply -f cluster-operator.yml
 
       - name: Apply Kubernetes simple-rabbitmq-cluster-service
         run: |
