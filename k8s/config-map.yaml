@@ -9,3 +9,5 @@ data:
   MS_PEDIDO_URL: https://mspedido.azure-api.net/api/pedidos
   URL_MS_PAGAMENTO: http://mspagamento.azure-api.net/api/pagamentos
   URL_MS_PRODUCAO: http://msproducao.azure-api.net/api/producao-pedidos
+  RABBITMQ_DEFAULT_USER: ${{ secrets.KUBE_CONFIG }}
+  RABBITMQ_DEFAULT_PASS: ${{ secrets.KUBE_CONFIG }}
