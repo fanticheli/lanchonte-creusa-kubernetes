@@ -27,7 +27,7 @@ jobs:
 
       - name: Apply Kubernetes Manifests
         run: |
-          kubectl apply -f /k8s/rabbitmq --force
+          kubectl apply -f k8s/rabbitmq --force
 
       - name: Logout from Azure
         run: az logout
