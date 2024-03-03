@@ -23,8 +23,18 @@ spec:
                 configMapKeyRef:
                   name: lanchonete-configmap
                   key: MONGO_URI_PAGAMENTO
-            - name: MS_PEDIDO_URL
+            - name: QUEUE_HOST
               valueFrom:
                 configMapKeyRef:
                   name: lanchonete-configmap
-                  key: MS_PEDIDO_URL
+                  key: QUEUE_HOST
+            - name: QUEUE_PEDIDOS_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: lanchonete-configmap
+                  key: QUEUE_PEDIDOS_NAME
+            - name: QUEUE_PAGAMENTOS_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: lanchonete-configmap
+                  key: QUEUE_PAGAMENTOS_NAME
