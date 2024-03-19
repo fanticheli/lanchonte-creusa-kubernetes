@@ -11,3 +11,4 @@ data:
   QUEUE_PAGAMENTOS_NAME: pagamentos
   QUEUE_PRODUCAO_NAME: producao
   QUEUE_PRONTOS_NAME: prontos
+  WEBHOOK_DELETE_PAGAMENTOS: http://4.228.155.35/api/pagamentos
