@@ -48,3 +48,8 @@ spec:
                 configMapKeyRef:
                   name: lanchonete-configmap
                   key: QUEUE_PRONTOS_NAME
+            - name: WEBHOOK_DELETE_PAGAMENTOS
+              valueFrom:
+                configMapKeyRef:
+                  name: lanchonete-configmap
+                  key: WEBHOOK_DELETE_PAGAMENTOS
