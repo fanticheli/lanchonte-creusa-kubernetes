@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: express-container-ms-pagamento
-          image: acrlanchonete.azurecr.io/lanchonetecreusa-ms-pagamento:{{.Values.imageTag}}
+          image: acrlanchonetee.azurecr.io/lanchonetecreusa-ms-pagamento:{{.Values.imageTag}}
           ports:
             - containerPort: 3000
           env:
