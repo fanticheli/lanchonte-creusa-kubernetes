@@ -6,7 +6,7 @@ data:
   MONGO_URI_PEDIDO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-pedido
   MONGO_URI_PAGAMENTO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-pagamento
   MONGO_URI_PRODUCAO: mongodb+srv://creusinha:lanchoneteCreusa2023@lanchonete-creusa.bvnpbmc.mongodb.net/lanchonete-creusa-producao
-  QUEUE_HOST: amqp://localhost:5672/
+  QUEUE_HOST: amqp://4.228.72.164/:5672/
   QUEUE_PEDIDOS_NAME: pedidos
   QUEUE_PAGAMENTOS_NAME: pagamentos
   QUEUE_PRODUCAO_NAME: producao
