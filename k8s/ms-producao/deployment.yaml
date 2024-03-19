@@ -23,7 +23,6 @@ spec:
                 configMapKeyRef:
                   name: lanchonete-configmap
                   key: MONGO_URI_PRODUCAO
-            - name: QUEUE_HOST
             - name: QUEUE_PRODUCAO_NAME
               valueFrom:
                 configMapKeyRef:
@@ -34,6 +33,7 @@ spec:
                 configMapKeyRef:
                   name: lanchonete-configmap
                   key: QUEUE_PRONTOS_NAME
+            - name: QUEUE_HOST
               valueFrom:
                 configMapKeyRef:
                   name: lanchonete-configmap
